@@ -46,7 +46,7 @@ namespace TransponderReceiverUser
             if (warnings.planesInDanger.Count > 0)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("\n--- THESE NIGGAS TOO CLOSE ---");
+                Console.WriteLine("\n--- THESE PLANES ARE TOO CLOSE ---");
                 var prints = warnings.planesInDanger.Select(pair => string.Format("{0} is too close to {1} at {2}", pair.Item1.Data.Tag, pair.Item2.Data.Tag, DateTime.Now.ToString("T")));
                 foreach (var print in prints)
                 {
